@@ -1,0 +1,338 @@
+[
+  {
+    "id": "1",
+    "data": {
+      "label": "WebForm Lead"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "orange",
+      "border": "1px solid #000"
+    },
+    "position": {
+      "x": "100",
+      "y": "0"
+    }
+  },
+  {
+    "id": "2",
+    "data": {
+      "label": "CRM List Uploads"
+    },
+    "position": {
+      "x": "350",
+      "y": "0"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "orange",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "3",
+    "data": {
+      "label": "ICP based Ecrichment"
+    },
+    "position": {
+      "x": "220",
+      "y": "100"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "#c14366",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "4",
+    "position": {
+      "x": "0",
+      "y": "200"
+    },
+    "data": {
+      "label": "Lead Accounting mapping"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "#c14366",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "5",
+    "data": {
+      "label": "Score & Split (Multiple Conditions)"
+    },
+    "position": {
+      "x": "250",
+      "y": "200"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "blue",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "6",
+    "data": {
+      "label": "Route to CSM"
+    },
+    "position": {
+      "x": "0",
+      "y": "300"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "green",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "7",
+    "data": {
+      "label": "Route to SDR Team"
+    },
+    "position": {
+      "x": "200",
+      "y": "300"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "green",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "8",
+    "data": {
+      "label": "Route to AE team"
+    },
+    "position": {
+      "x": "400",
+      "y": "300"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "green",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "9",
+    "data": {
+      "label": "Notify CSM"
+    },
+    "position": {
+      "x": "0",
+      "y": "400"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "red",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "10",
+    "data": {
+      "label": "Round Robin Router"
+    },
+    "position": {
+      "x": "200",
+      "y": "400"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "green",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "11",
+    "data": {
+      "label": "Match AE skills with leads Acct"
+    },
+    "position": {
+      "x": "400",
+      "y": "400"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "green",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "12",
+    "data": {
+      "label": "Add to Candence(Market)"
+    },
+    "position": {
+      "x": "0",
+      "y": "500"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "red",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "13",
+    "data": {
+      "label": "Routes to Off hours team"
+    },
+    "position": {
+      "x": "200",
+      "y": "500"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "green",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "14",
+    "data": {
+      "label": "Route to AE"
+    },
+    "position": {
+      "x": "400",
+      "y": "500"
+    },
+    "style": {
+      "background": "#fff",
+      "color": "green",
+      "border": "1px solid #000"
+    }
+  },
+  {
+    "id": "e1-2",
+    "source": "1",
+    "type": "straight",
+    "arrowHeadType": "arrowclosed",
+    "target": "3"
+  },
+  {
+    "id": "e1-3",
+    "type": "straight",
+    "arrowHeadType": "arrowclosed",
+    "source": "2",
+    "target": "3"
+  },
+  {
+    "id": "e3-4",
+    "source": "3",
+    "arrowHeadType": "arrowclosed",
+    "type": "straight",
+    "target": "4"
+  },
+  {
+    "id": "e4-5",
+    "source": "4",
+    "target": "5",
+    "type": "straight",
+    "arrowHeadType": "arrowclosed"
+  },
+  {
+    "id": "e4-6",
+    "source": "4",
+    "label": "Current Customer",
+    "target": "6",
+    "arrowHeadType": "arrowclosed",
+    "type": "straight",
+    "labelBgPadding": [8, 4],
+    "labelBgBorderRadius": 10,
+    "labelBgStyle": {
+      "fill": "red",
+      "color": "white"
+    }
+  },
+  {
+    "id": "e5-7",
+    "source": "5",
+    "label": "Score < 50 Router",
+    "target": "7",
+    "type": "straight",
+    "arrowHeadType": "arrowclosed",
+    "labelBgPadding": [8, 4],
+    "labelBgBorderRadius": 10,
+    "labelBgStyle": {
+      "fill": "red",
+      "color": "white"
+    }
+  },
+  {
+    "id": "e5-8",
+    "source": "5",
+    "label": "Advance Router",
+    "target": "8",
+    "arrowHeadType": "arrowclosed",
+    "type": "straight",
+    "labelBgPadding": [8, 4],
+    "labelBgBorderRadius": 10,
+    "labelBgStyle": {
+      "fill": "red",
+      "color": "white"
+    }
+  }
+  ,
+  {
+    "id": "e6-9",
+    "source": "6",
+    "target": "9",
+    "arrowHeadType": "arrowclosed",
+    "type": "straight"
+  }
+  ,
+  {
+    "id": "e7-10",
+    "source": "7",
+    "target": "10",
+    "arrowHeadType": "arrowclosed",
+    "type": "straight"
+  }
+  ,
+  {
+    "id": "e8-11",
+    "source": "8",
+    "target": "11",
+    "arrowHeadType": "arrowclosed",
+    "type": "straight",
+    "label": "a step edge"
+  }
+  ,
+  {
+    "id": "e9-12",
+    "source": "9",
+    "arrowHeadType": "arrowclosed",
+    "target": "12",
+    "type": "straight"
+  }
+  ,
+  {
+    "id": "e10-13",
+    "source": "10",
+    "target": "13",
+    "type": "straight",
+    "arrowHeadType": "arrowclosed",
+    "label": "Off Hours?",
+    "labelBgPadding": [8, 4],
+    "labelBgBorderRadius": 10,
+    "labelBgStyle": {
+      "fill": "red",
+      "color": "white"
+    }
+  }
+  ,
+  {
+    "id": "e11-14",
+    "arrowHeadType": "arrowclosed",
+    "source": "11",
+    "target": "14",
+    "type": "straight"
+  }
+]
